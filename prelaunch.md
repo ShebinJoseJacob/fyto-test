@@ -54,6 +54,8 @@
 
 ## The Fytó Dashboard
 
+![The Fytó Dashboard showing live sensors, plant mood, and telemetry charts](images/CS-images/fyto-dashboard-01.jpg)
+
 The face tells you how your plant feels right now. The dashboard tells you its story. See live readings on real-time gauges, scroll back through sensor history to spot the afternoon your windowsill gets too hot, and follow a mood timeline that shows how your plant's week really went. Set alerts so you hear about a dry pot before Fytó starts sulking.
 
 Have more than one Fytó? The dashboard shows them all side by side. It's self-hosted, so your data stays on your network, and it's open source, so you can change any part of it.
