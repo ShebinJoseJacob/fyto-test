@@ -8,7 +8,7 @@
 
 # Introduce Your Project
 
-![Hands holding Fytó, smiling, with a leafy plant](images/CS-images/fyto-angle-06.jpg)
+![Fytó smart planter with a lucky bamboo plant](images/CS-images/fyto-planted-04-sm.jpg)
 
 **Your plant has always had feelings. Now it has a face.**
 
@@ -35,6 +35,8 @@
 ![Fytó showing its Happy face](images/CS-images/pre-happy.jpg)
 
 **Touch it, and it loves you back.** Hearts, wide eyes, pure joy. That small moment is what turns a plant into a pet.
+
+![Fytó showing its Pampered face after being touched](images/CS-images/pre-pamper-sm.jpg)
 
 **No app. No account. No subscription.** Plug Fytó in and it starts caring for your plant. When you want the numbers behind the face, the **Fytó Dashboard** puts every plant in your home on one screen, with live gauges, history charts, a timeline of moods, and alerts, all running on your own hardware.
 
@@ -113,9 +115,6 @@ Their builds and feedback shaped everything about this version: more senses, a r
 - Self-hostable Fytó dashboard with real-time gauges, mood timeline, sensor history charts, alerts, and multi-plant support
 
 ### Physical
-
-![Fytó next to everyday objects for scale](images/CS-images/fyto-scale-01.jpg)
-
 - **Dimensions (H x W x D):** 15 x 16 x 16 cm (5.9 x 6.3 x 6.3 in)
 - **Weight (empty):** 200 g (7.1 oz)
 - **Enclosure:** 3D printed
