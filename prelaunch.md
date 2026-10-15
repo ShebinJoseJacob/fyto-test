@@ -66,7 +66,7 @@ Fytó plays well with the tools you already use. Feed its readings into Home Ass
 
 We're CodersCafe, and Fytó started as a simple question: what if a plant could tell you how it feels? The first version ran on a Raspberry Pi Zero 2 W with a breadboard full of wires. We shared it on [YouTube](https://youtu.be/zNNZdUzXV7M), [Hackster.io](https://www.hackster.io/coderscafe/fyto-turn-your-plant-into-pet-1373d5), [Instructables](https://www.instructables.com/Fyt%C3%B3-Turn-Your-Plant-Into-Pet), and [Hackaday.io](https://hackaday.io/project/186729-fyt-turn-your-plant-into-pet), and makers around the world built their own.
 
-Their builds and feedback shaped everything about this version: more senses, a round face, a proper PCB, a dashboard, and no breadboard or soldering required. This is the Fytó we always wanted to make, and now we want to put one on your desk.
+Their builds and feedback shaped everything about this version: more senses, a round face, a proper PCB, a dashboard, and no breadboard required. This is the Fytó we always wanted to make, and now we want to put one on your desk.
 
 ---
 
@@ -78,7 +78,7 @@ Their builds and feedback shaped everything about this version: more senses, a r
 - **Display:** 1.28" round IPS, 240 x 240 pixels, GC9A01 controller
 - **Ports:** USB Type-C for power and programming
 - **Power:** 5 V via USB Type-C (no internal battery)
-- **Sensor connections:** Keyed JST connectors; no soldering required
+- **Sensor connections:** Keyed JST connectors
 
 ### Sensors
 - **Soil moisture:** Capacitive, TLC555-based (no exposed metal probes, resistant to corrosion)
