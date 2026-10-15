@@ -97,7 +97,7 @@ Their builds and feedback shaped everything about this version: more senses, a r
 - Home Assistant
 - Blynk (dedicated firmware build)
 - Arduino IoT Cloud (dedicated firmware build)
-- MQTT (disabled by default) with per-device topics for sensor data, status, and mood
+- MQTT with per-device topics for sensor data, status, and mood
 - Self-hostable Fytó dashboard with real-time gauges, mood timeline, sensor history charts, alerts, and multi-plant support
 
 ### Physical
@@ -109,13 +109,6 @@ Their builds and feedback shaped everything about this version: more senses, a r
 
 # Open Source
 
-**Everything will be open.** The files for the original Raspberry Pi Zero 2 W version of Fytó are already public on [GitHub](https://github.com/CodersCafeTech/Fyto). For this ESP32-S3 version, we will publish the firmware, schematics, PCB layout, bill of materials, enclosure 3D files, and self-hosted dashboard following a successful campaign, before units ship to Crowd Supply for fulfillment.
-
-- **Hardware (schematics, PCB layout, BOM):** CERN-OHL-S-2.0
-- **Firmware:** GPL-3.0
-- **Dashboard:** AGPL-3.0
-- **Enclosure 3D files & documentation:** CC BY-SA 4.0
+**Everything will be open.** The files for the original Raspberry Pi Zero 2 W version of Fytó are already public on [GitHub](https://github.com/CodersCafeTech/Fyto). For this ESP32-S3 version, we will publish the firmware, schematics, PCB layout, bill of materials, enclosure 3D files, and self-hosted dashboard following a successful campaign, before units ship to Crowd Supply for fulfillment. All of it will be released under open source licenses.
 
 Once the files are public, anyone can open issues, submit pull requests, design new enclosures, add sensors, or create new expressions. We will highlight the best community remixes.
-
-The Fytó name and logo are trademarks of CodersCafe and are not covered by the licenses above.
