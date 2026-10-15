@@ -2,7 +2,7 @@
 
 **Project name:** Fytó
 
-**Project teaser:** An expressive, ESP32-S3-based smart planter that turns your houseplant into a pet
+**Project teaser:** An open source, ESP32-S3-based smart planter that gives your houseplant a face
 
 ---
 
@@ -12,21 +12,21 @@
 
 **Your plant has always had feelings. Now it has a face.**
 
-**Fytó** by CodersCafe is a smart planter with six senses and a round display that shows how your plant feels, in real time.
+**Fytó** is a smart planter with a round display, five senses, and a personality. It reads the soil, the air, the light, and your touch, and turns all of it into something anyone can understand at a glance: a face.
 
 ![Fytó showing its Happy face](images/CS-images/pre-happy.jpg)
 
-Dry soil? Fytó looks parched. Too warm? It looks flushed. Not enough light? It yawns. Water it, and watch the relief spread across its face.
+Dry soil? Fytó looks parched. Too warm? It looks flushed. Too dark? It gets sleepy. Water it, and watch the relief spread across its face.
 
 ![Fytó looking flushed under a hot desk lamp](images/CS-images/pre-hot-2.jpg)
 
-**Touch it, and it loves you back.** Hearts, wide eyes, pure joy. That small moment of feedback is what turns a plant into a pet.
+**Touch it, and it loves you back.** Hearts, wide eyes, pure joy. That small moment is what turns a plant into a pet.
 
 ![Fytó showing its Pampered face after being touched](images/CS-images/pre-pamper.jpg)
 
-**Feedback that lives on the pot, not in an app.** Most smart plant monitors hide their readings behind a phone notification. Fytó puts them right where you'll see them, on a face that sits on your desk or windowsill.
+**No app. No account. No subscription.** Plug Fytó in and it starts caring for your plant. When you want the numbers behind the face, the **Fytó Dashboard** puts every plant in your home on one screen, with live gauges, history charts, a timeline of moods, and alerts, all running on your own hardware.
 
-**Open source and lock-in free.** Fytó works on its own out of the box. When you want more, it connects to Home Assistant, Blynk, Arduino IoT Cloud, MQTT, or a dashboard you host yourself.
+**Open source, inside and out.** Firmware, hardware, enclosure, and dashboard are all open. Fytó doesn't depend on our servers, so it keeps working no matter what happens to us.
 
 ---
 
@@ -36,11 +36,23 @@ Dry soil? Fytó looks parched. Too warm? It looks flushed. Not enough light? It 
 
 **Plants go quiet until it's too late.** By the time a leaf droops or yellows, the damage is done. Fytó makes those signals impossible to miss. A thirsty face on your desk is much harder to ignore than a reminder buried in an app.
 
-**Every face is driven by real sensor data.** Soil moisture, temperature, humidity, light, and water level map directly to an emotion, so you learn what your plant actually needs. Up to ten plant profiles let you tune Fytó for a succulent, a fern, or anything in between.
+**Every face is driven by real sensor data.** Soil moisture, temperature, humidity, and light map directly to an emotion, so over time you learn what your plant actually needs. Up to ten plant profiles let you tune Fytó for a succulent, a fern, or anything in between.
 
-**Built for tinkerers, too.** Feed Fytó's readings into Home Assistant automations, a Blynk or Arduino IoT Cloud dashboard, or your own MQTT tools. Add sensors, write new expressions, or print a completely new enclosure.
+## The Fytó Dashboard
 
-**Born in the maker community.** The original Fytó, built on a Raspberry Pi Zero 2 W, was shared on [YouTube](https://youtu.be/zNNZdUzXV7M), [Hackster.io](https://www.hackster.io/coderscafe/fyto-turn-your-plant-into-pet-1373d5), [Instructables](https://www.instructables.com/Fyt%C3%B3-Turn-Your-Plant-Into-Pet), and [Hackaday.io](https://hackaday.io/project/186729-fyt-turn-your-plant-into-pet), and rebuilt by makers around the world. This version is what we learned from them: more senses, a round face, a proper PCB, and no breadboard required.
+The face tells you how your plant feels right now. The dashboard tells you its story. See live readings on real-time gauges, scroll back through sensor history to spot the afternoon your windowsill gets too hot, and follow a mood timeline that shows how your plant's week really went. Set alerts so you hear about a dry pot before Fytó starts sulking.
+
+Have more than one Fytó? The dashboard shows them all side by side. It's self-hosted, so your data stays on your network, and it's open source, so you can change any part of it.
+
+## Built for Tinkerers
+
+Fytó plays well with the tools you already use. Feed its readings into Home Assistant automations, a Blynk or Arduino IoT Cloud project, or your own MQTT setup. Add sensors, design new expressions, or print a completely new enclosure. Everything about Fytó is meant to be opened up and changed.
+
+## From Our Workbench to Yours
+
+We're CodersCafe, and Fytó started as a simple question: what if a plant could tell you how it feels? The first version ran on a Raspberry Pi Zero 2 W with a breadboard full of wires. We shared it on [YouTube](https://youtu.be/zNNZdUzXV7M), [Hackster.io](https://www.hackster.io/coderscafe/fyto-turn-your-plant-into-pet-1373d5), [Instructables](https://www.instructables.com/Fyt%C3%B3-Turn-Your-Plant-Into-Pet), and [Hackaday.io](https://hackaday.io/project/186729-fyt-turn-your-plant-into-pet), and makers around the world built their own.
+
+Their builds and feedback shaped everything about this version: more senses, a round face, a proper PCB, a dashboard, and no breadboard or soldering required. This is the Fytó we always wanted to make, and now we want to put one on your desk.
 
 ---
 
@@ -58,7 +70,6 @@ Dry soil? Fytó looks parched. Too warm? It looks flushed. Not enough light? It 
 - **Soil moisture:** Capacitive, TLC555-based (no exposed metal probes, resistant to corrosion)
 - **Temperature & humidity:** AHT20 (±0.3 °C, ±2% RH typical)
 - **Ambient light:** LDR photoresistor, also used for automatic display brightness
-- **Water level:** Conductivity probe for reservoir detection
 - **Touch:** TTP223 capacitive touch sensor, with support for the ESP32-S3's native touch pins
 
 ### Personality
@@ -77,7 +88,7 @@ Dry soil? Fytó looks parched. Too warm? It looks flushed. Not enough light? It 
 - FreeRTOS-based firmware with concurrent display, sensor, touch, state, menu, and MQTT tasks
 - Boots in under one second
 - Configuration through a serial menu, accessible from any serial terminal or directly in Chrome or Edge via WebSerial
-- Up to 10 plant profiles with individual moisture, temperature, light, and water-level thresholds
+- Up to 10 plant profiles with individual moisture, temperature, and light thresholds
 - Two-point calibration for soil moisture and light, stored in flash and retained across firmware updates
 - Adjustable animation duration, priority mode, boot screen, and auto-brightness range
 
